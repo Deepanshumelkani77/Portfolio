@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 5000;
 app.use(cors({
   origin: [
     'http://localhost:5173',
-    'deepanshu-melkani-portfolio-lxd0nn0rx.vercel.app',
+    'https://deepanshu-melkani-portfolio.vercel.app/',
     
   ],
   methods: ['POST', 'GET'],
