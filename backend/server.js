@@ -8,7 +8,11 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors({
-  origin: 'http://localhost:5173', // Update with your frontend URL
+  origin: [
+    'http://localhost:5173',
+    'deepanshu-melkani-portfolio-lxd0nn0rx.vercel.app',
+    
+  ],
   methods: ['POST', 'GET'],
   credentials: true
 }));
