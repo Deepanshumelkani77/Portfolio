@@ -33,8 +33,11 @@ const Contact = () => {
     try {
       const response = await fetch('https://portfolio-backend-aoqc.onrender.com/api/contact', {
         method: 'POST',
+        mode: 'cors',
+        credentials: 'include',
         headers: {
           'Content-Type': 'application/json',
+          'Accept': 'application/json',
         },
         body: JSON.stringify(formData),
       });
