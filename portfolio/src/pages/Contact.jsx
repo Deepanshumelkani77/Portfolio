@@ -31,7 +31,7 @@ const Contact = () => {
     const loadingToast = toast.loading('Sending message...');
 
     try {
-      const response = await fetch('http://localhost:5000/api/contact', {
+      const response = await fetch('https://portfolio-backend-1rr9.onrender.com/api/contact', {
         method: 'POST',
         mode: 'cors',
         credentials: 'include',
