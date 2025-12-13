@@ -31,7 +31,7 @@ const Contact = () => {
     const loadingToast = toast.loading('Sending message...');
 
     try {
-      const response = await fetch('https://portfolio-backend-aoqc.onrender.com/api/contact', {
+      const response = await fetch('http://localhost:5000/api/contact', {
         method: 'POST',
         mode: 'cors',
         credentials: 'include',
@@ -257,9 +257,9 @@ const Contact = () => {
                 >
                   <option value="" className="text-gray-500">Select a service</option>
                   <option value="web-development">Web Development</option>
-                  <option value="app-development">App Development</option>
+                
                   <option value="ui-ux">UI/UX Design</option>
-                  <option value="consultation">Consultation</option>
+              
                   <option value="other">Other</option>
                 </select>
               </div>

@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 5000;
 
 // CORS Configuration
 const allowedOrigins = [
-  'http://localhost:5173',
+  'http://localhost:5174',
   'https://deepanshu-melkani-portfolio.vercel.app',
   'https://deepanshu-melkani-portfolio-lxd0nn0rx.vercel.app'
 ];
