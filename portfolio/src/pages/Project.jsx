@@ -2,9 +2,11 @@ import React, { useEffect, useMemo, useRef, useState } from 'react'
 import img1 from "../assets/d.png"
 import img2 from "../assets/img2.png"
 import img3 from "../assets/header_img.png"
-import photo1 from "../assets/photo1.JPG"
-import photo2 from "../assets/photo2.PNG"
-import photo3 from "../assets/header_img.png"
+import photo1 from "../assets/photo1.png"
+import photo2 from "../assets/photo2.png"
+import photo3 from "../assets/photo3.png"
+import img4 from "../assets/img4.png"
+import photo4 from "../assets/photo4.png"
 import {motion, AnimatePresence, useMotionValueEvent, useScroll } from 'framer-motion'
 
 const useIsMobile=(query = "(max-width:639px)")=>{
@@ -35,13 +37,19 @@ const sceneRef=useRef(null);
 const projects = useMemo(
     () => [
       {
-        title: "Me & Guys",
+        title: "Salon ",
         link: "https://saloon-frontend-blond.vercel.app/",
         bgColor: "#000000",
         image: isMobile ? photo1 : img1, // use mobile or desktop image
       },
       {
-        title: "College Grievance System",
+        title: "Prescripto",
+        link: "https://prescripto-sand-eight.vercel.app/",
+        bgColor: "#000000",
+        image: isMobile ? photo4 : img4,
+      },
+      {
+        title: " Grievance System",
         link: "https://biasonlinegrievancesystem.vercel.app/",
         bgColor: "#000000",
         image: isMobile ? photo2 : img2,
